@@ -36,7 +36,7 @@ class HomeController extends Controller
     public function log_out()
     {
         Session::flush();
-        return redirect('/login');
+        return redirect('/');
     }
 
     

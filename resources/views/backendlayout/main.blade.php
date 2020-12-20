@@ -4,7 +4,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hotel Management System</title>
+    <title>Dynamic Website</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <meta name="description" content="">
     <meta property="og:type" content="website">
@@ -476,7 +476,7 @@
       @yield('content')
       <div class="layout-footer">
         <div class="layout-footer-body">
-          <small class="copyright">2020 &copy; Deshi System Limited</small>
+          <small class="copyright">2021 &copy; a&jsoft.com</small>
         </div>
       </div>
     </div>
