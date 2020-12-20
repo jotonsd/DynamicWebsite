@@ -4,7 +4,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dynamic Website</title>
+    @yield('title')
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <meta name="description" content="">
     <meta property="og:type" content="website">
@@ -71,7 +71,7 @@
         <div class="navbar-header">
           <a class="navbar-brand navbar-brand-center" href="{{route('home')}}">
             {{-- <img class="navbar-brand-logo" src="backend/img/logo.png" alt="Elephant"> --}}
-            Roomscope
+            Admin Panel
           </a>
           <button class="navbar-toggler visible-xs-block collapsed" type="button" data-toggle="collapse" data-target="#sidenav">
             <span class="sr-only">Toggle navigation</span>
@@ -385,7 +385,7 @@
               </li> --}}
               <li class="dropdown hidden-xs">
                 <button class="navbar-account-btn" data-toggle="dropdown" aria-haspopup="true">
-                  <img class="rounded" width="36" height="36" src="backend/img/0180441436.jpg" alt="Teddy Wilson"> {{ Auth::User()->name}}
+                  <img class="rounded" width="36" height="36" src="backend/img/avatar.png" alt="{{ Auth::User()->name}}"> {{ Auth::User()->name}}
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-right">
