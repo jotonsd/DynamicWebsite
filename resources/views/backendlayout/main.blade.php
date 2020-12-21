@@ -483,7 +483,7 @@
       @yield('content')
       <div class="layout-footer">
         <div class="layout-footer-body">
-          <small class="copyright">2021 &copy; a&jsoft.com</small>
+          <small class="copyright">2021 &copy; a2jsoft.com</small>
         </div>
       </div>
     </div>
