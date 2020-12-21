@@ -32,4 +32,13 @@ Route::get('/frontend_menu', 'App\Http\Controllers\Backend\FrontendMenuControlle
 Route::get('/frontend_menu/active{id}', 'App\Http\Controllers\Backend\FrontendMenuController@active');
 Route::get('/frontend_menu/deactive{id}', 'App\Http\Controllers\Backend\FrontendMenuController@deactive');
 
+// Category
+Route::get('/categories', 'App\Http\Controllers\Backend\CategoryController@index');
+Route::post('/save_category', 'App\Http\Controllers\Backend\CategoryController@save_category');
+Route::post('/update_category', 'App\Http\Controllers\Backend\CategoryController@update_category');
+Route::get('/categories/active{id}', 'App\Http\Controllers\Backend\CategoryController@active');
+Route::get('/categories/deactive{id}', 'App\Http\Controllers\Backend\CategoryController@deactive');
+Route::get('/delete_category{id}', 'App\Http\Controllers\Backend\CategoryController@delete_category');
+
+
 });

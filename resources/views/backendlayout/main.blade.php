@@ -89,7 +89,7 @@
             <span class="sr-only">Toggle navigation</span>
             <span class="arrow-up"></span>
             <span class="ellipsis ellipsis-vertical">
-              <img class="ellipsis-object" width="32" height="32" src="backend/img/0180441436.jpg" alt="Teddy Wilson">
+              <img class="ellipsis-object" width="32" height="32" src="backend/img/avatar.png" alt="{{ Auth::User()->name }}">
             </span>
           </button>
         </div>
@@ -400,10 +400,17 @@
                   {{-- <li class="divider"></li>
                   <li class="navbar-upgrade-version">Version: 1.0.0</li>
                   <li class="divider"></li> --}}
+                  <li><a href="/">Back to website</a></li>
                   <li><a href="contacts.html">Contacts</a></li>
                   <li><a href="profile.html">Profile</a></li>
                   <li><a href="{{ route('log_out') }}">Sign out</a></li>
                 </ul>
+              </li>
+              <li class="visible-xs-block">
+                <a href="/">
+                  <span class="icon icon-globe icon-lg icon-fw"></span>
+                  Back to website
+                </a>
               </li>
               <li class="visible-xs-block">
                 <a href="contacts.html">

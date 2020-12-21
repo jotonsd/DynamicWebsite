@@ -21,13 +21,13 @@ class FrontendMenuController extends Controller
     {
         $data = array('status'=> 1);
         fmenu::where('id', $id)->update($data);
-        return redirect('/frontend_menu');
+        return redirect('/frontend_menu')->with('message', 'Menu actived successfully!');
     }
     public function deactive($id)
     {
         $data = array('status'=> 0);
         fmenu::where('id', $id)->update($data);
-        return redirect('/frontend_menu');
+        return redirect('/frontend_menu')->with('message', 'Menu deactived successfully!');
     }
 
 }

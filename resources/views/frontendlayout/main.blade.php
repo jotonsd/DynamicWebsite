@@ -24,7 +24,7 @@
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="frontend/css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/frontend/css/font-awesome.css">
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -102,19 +102,16 @@
       @yield('content')
       <!--  footer --> 
 
-
-
-
       <footr>
          <div class="footer">
             <div class="container">
                <div class="row">
                   <div class="col-md-6 offset-md-3">
                      <ul class="sociel">
-                         <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                         <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
                          <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
                          <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
-                         <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                         <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
                      </ul>
                   </div>
             </div>

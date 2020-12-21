@@ -45,8 +45,6 @@
        </a>
        <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
        <i class='fa fa-angle-left'></i>
-       </a>
-       
     </div>
 
  </section>

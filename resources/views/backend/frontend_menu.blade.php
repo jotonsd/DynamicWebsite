@@ -11,11 +11,14 @@
         </h1>
         <hr >
       </div>
-      
-
+      @if(session()->has('message'))
+          <div class="alert alert-success">
+              {{ session()->get('message') }}
+          </div>
+      @endif
       <div class="row gutter-xs">
-          <div class="col-xs-2"></div>
-        <div class="col-xs-8">
+          <div class="col-xs-1"></div>
+        <div class="col-xs-10">
           <div class="card">
             <div class="card-header">
               <div class="card-actions">
@@ -23,7 +26,7 @@
                 <button type="button" class="card-action card-reload" title="Reload"></button>
                 <button type="button" class="card-action card-remove" title="Remove"></button>
               </div>
-              <strong>Account Heads</strong>
+              <strong>Menu List</strong>
             </div>
             <div class="card-body">
               <table id="demo-datatables-responsive-2" class="table table-bordered table-striped table-nowrap dataTable" cellspacing="0" width="100%">
