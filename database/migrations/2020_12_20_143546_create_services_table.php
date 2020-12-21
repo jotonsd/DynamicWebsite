@@ -19,7 +19,7 @@ class CreateServicesTable extends Migration
             $table->unsignedBigInteger('categories_id');
             $table->string('description');
             $table->string('image')->nullable();
-            $table->tinyInteger('status')->default('1');
+            $table->tinyInteger('status')->default('0');
             $table->timestamps();
 
             $table->foreign('categories_id')->references('id')->on('categories');

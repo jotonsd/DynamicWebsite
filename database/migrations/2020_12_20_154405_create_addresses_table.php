@@ -20,7 +20,7 @@ class CreateAddressesTable extends Migration
             $table->string('division');
             $table->string('postalcode');
             $table->string('email')->unique();
-            $table->tinyInteger('status')->default('1');
+            $table->tinyInteger('status')->default('0');
             $table->timestamps();
         });
     }
