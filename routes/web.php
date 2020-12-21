@@ -27,6 +27,9 @@ Route::get('/user_permission', 'App\Http\Controllers\Backend\Security\UserPermis
 Route::post('/user_permission/save_data', 'App\Http\Controllers\Backend\Security\UserPermissionController@save_data');
 Route::post('/user_permission/delete_data', 'App\Http\Controllers\Backend\Security\UserPermissionController@delete_data');
 
-
+// frontend menu
+Route::get('/frontend_menu', 'App\Http\Controllers\Backend\FrontendMenuController@index');
+Route::get('/frontend_menu/active{id}', 'App\Http\Controllers\Backend\FrontendMenuController@active');
+Route::get('/frontend_menu/deactive{id}', 'App\Http\Controllers\Backend\FrontendMenuController@deactive');
 
 });

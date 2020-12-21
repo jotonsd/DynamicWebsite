@@ -457,7 +457,7 @@
                 @foreach($menus as $menu)
                 <li class="sidenav-item" class="treeview" id="tree1">
                   
-                  <a href="#" aria-haspopup="true">
+                  <a href="{{ $menu->url }}" aria-haspopup="true">
                     <span class="sidenav-icon"><i class="fa fa-folder-open" aria-hidden="true"></i></span>
                     <span class="sidenav-label">{{ $menu->title }}
                   </a>
