@@ -40,5 +40,12 @@ Route::get('/categories/active{id}', 'App\Http\Controllers\Backend\CategoryContr
 Route::get('/categories/deactive{id}', 'App\Http\Controllers\Backend\CategoryController@deactive');
 Route::get('/delete_category{id}', 'App\Http\Controllers\Backend\CategoryController@delete_category');
 
+//logo
+Route::get('/upload_logo', 'App\Http\Controllers\Backend\LogoController@index');
+Route::post('/save_logo', 'App\Http\Controllers\Backend\LogoController@save_logo');
+Route::post('/update_logo', 'App\Http\Controllers\Backend\LogoController@update_logo');
+Route::get('/logos/active{id}', 'App\Http\Controllers\Backend\LogoController@active');
+Route::get('/logos/deactive{id}', 'App\Http\Controllers\Backend\LogoController@deactive');
+Route::get('/delete_logo{id}', 'App\Http\Controllers\Backend\LogoController@delete');
 
 });
