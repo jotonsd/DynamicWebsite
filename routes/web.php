@@ -48,4 +48,47 @@ Route::get('/logos/active{id}', 'App\Http\Controllers\Backend\LogoController@act
 Route::get('/logos/deactive{id}', 'App\Http\Controllers\Backend\LogoController@deactive');
 Route::get('/delete_logo{id}', 'App\Http\Controllers\Backend\LogoController@delete');
 
+// slider
+Route::get('/upload_slider', 'App\Http\Controllers\Backend\SliderController@index');
+Route::post('/save_slider', 'App\Http\Controllers\Backend\SliderController@save');
+Route::post('/update_slider', 'App\Http\Controllers\Backend\SliderController@update');
+Route::get('/sliders/active{id}', 'App\Http\Controllers\Backend\SliderController@active');
+Route::get('/sliders/deactive{id}', 'App\Http\Controllers\Backend\SliderController@deactive');
+Route::get('/delete_slider{id}', 'App\Http\Controllers\Backend\SliderController@delete');
+
+// social link type
+Route::get('/social_link_type', 'App\Http\Controllers\Backend\LinkTypeController@index');
+Route::post('/save_social_link_type', 'App\Http\Controllers\Backend\LinkTypeController@save');
+Route::post('/update_social_link_type', 'App\Http\Controllers\Backend\LinkTypeController@update');
+Route::get('/social_link_type/active{id}', 'App\Http\Controllers\Backend\LinkTypeController@active');
+Route::get('/social_link_type/deactive{id}', 'App\Http\Controllers\Backend\LinkTypeController@deactive');
+Route::get('/delete_social_link_type{id}', 'App\Http\Controllers\Backend\LinkTypeController@delete');
+
+// social link
+Route::get('/social_links', 'App\Http\Controllers\Backend\SocialLinkController@index');
+Route::post('/save_social_links', 'App\Http\Controllers\Backend\SocialLinkController@save');
+Route::post('/update_social_links', 'App\Http\Controllers\Backend\SocialLinkController@update');
+Route::get('/social_links/active{id}', 'App\Http\Controllers\Backend\SocialLinkController@active');
+Route::get('/social_links/deactive{id}', 'App\Http\Controllers\Backend\SocialLinkController@deactive');
+Route::get('/delete_social_links{id}', 'App\Http\Controllers\Backend\SocialLinkController@delete');\
+
+// address
+Route::get('/address', 'App\Http\Controllers\Backend\AddressController@index');
+Route::post('/save_address', 'App\Http\Controllers\Backend\AddressController@save');
+Route::post('/update_address', 'App\Http\Controllers\Backend\AddressController@update');
+Route::get('/address/active{id}', 'App\Http\Controllers\Backend\AddressController@active');
+Route::get('/address/deactive{id}', 'App\Http\Controllers\Backend\AddressController@deactive');
+Route::get('/delete_address{id}', 'App\Http\Controllers\Backend\AddressController@delete');
+
+// Why us
+Route::get('/why_us', 'App\Http\Controllers\Backend\ServiceController@why_us');
+Route::get('/services', 'App\Http\Controllers\Backend\ServiceController@services');
+Route::get('/products', 'App\Http\Controllers\Backend\ServiceController@products');
+Route::get('/about', 'App\Http\Controllers\Backend\ServiceController@about');
+Route::get('/upcoming_products', 'App\Http\Controllers\Backend\ServiceController@upcoming_products');
+Route::post('/save_data', 'App\Http\Controllers\Backend\ServiceController@save');
+Route::post('/update_data', 'App\Http\Controllers\Backend\ServiceController@update');
+Route::get('/services/active{id}', 'App\Http\Controllers\Backend\ServiceController@active');
+Route::get('/services/deactive{id}', 'App\Http\Controllers\Backend\ServiceController@deactive');
+Route::get('/delete_data{id}', 'App\Http\Controllers\Backend\ServiceController@delete');
 });

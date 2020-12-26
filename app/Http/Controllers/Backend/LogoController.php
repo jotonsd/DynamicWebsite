@@ -12,7 +12,7 @@ class LogoController extends Controller
     public function index()
     {
         $menus = Menu::all();
-        $Logo = Logo::all();
+        $Logo = logo::all();
         return view('backend.logos')
                 ->with('menus', $menus)
                 ->with('Logo', $Logo);
