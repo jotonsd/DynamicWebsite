@@ -71,15 +71,15 @@ class ServiceController extends Controller
 	    		 );
 	    	service::insert($data);
 	    	if ( $categories_id == 1) {
-	    		return redirect('/why_us')->with('message', 'Updated successfully!');
+	    		return redirect('/why_us')->with('message', 'Saved successfully!');
 	    	} else if ( $categories_id == 2) {
-	    		return redirect('/services')->with('message', 'Updated successfully!');
+	    		return redirect('/services')->with('message', 'Saved successfully!');
 	    	} else if ( $categories_id == 3) {
-	    		return redirect('/products')->with('message', 'Updated successfully!');
+	    		return redirect('/products')->with('message', 'Saved successfully!');
 	    	} else if ( $categories_id == 4) {
-	    		return redirect('/about')->with('message', 'Updated successfully!');
+	    		return redirect('/about')->with('message', 'Saved successfully!');
 	    	} else{
-	    		return redirect('/upcoming_products')->with('message', 'Updated successfully!');
+	    		return redirect('/upcoming_products')->with('message', 'Saved successfully!');
 	    	}
 	    	
 	    }

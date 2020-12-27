@@ -45,7 +45,7 @@ class SliderController extends Controller
 			'description' => 'required',
 			]);
 			if ($files = $req->file('image')) {
-			$destinationPath = 'image/logos/'; // upload path
+			$destinationPath = 'image/sliders/'; // upload path
 			$image = date('YmdHis') . "." . $files->getClientOriginalExtension();
 			$files->move($destinationPath, $image);
 	    	$data = array(
