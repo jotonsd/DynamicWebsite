@@ -134,7 +134,7 @@
 <script>
   var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
   function clearall(){
-    $('#company_name').val('');
+    $('#description').val('');
     $('#output').attr('src', '/backend/img/slider.png');
     $('#SaveSlider').text('Save');
     $('#addSlider').modal('toggle');
@@ -149,7 +149,7 @@
     if(data>=0)
     {
       $('#id').val(slider[data].id);
-      $('#company_name').val(slider[data].description);
+      $('#description').val(slider[data].description);
       $('#output').attr('src', 'image/sliders/' + slider[data].image);
       $('#myFrom').attr('action', '/update_slider');
       $('#SaveSlider').text('Update');

@@ -83,7 +83,10 @@
                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                   <div class="full">
                      <div class="center-desk">
-                        <div class="logo"> <a href="index.html"><img src="frontend/images/logo.jpg" alt="logo"/></a> </div>
+                      @php
+                        $logo = App\Models\logo::where('status',1)->first();
+                      @endphp
+                        <div class="logo"> <a href="index.html"><img src="image/logos/{{ $logo->logo }}" alt="logo"/></a> </div>
                      </div>
                   </div>
                </div>
