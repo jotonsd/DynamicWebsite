@@ -29,12 +29,28 @@
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      <style>
+        .megamenu-li {
+          position: static;
+        }
+
+        .megamenu {
+            position: absolute;
+            width: 200%;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            margin-left: -55%;
+        }
+
+      </style>
+
    </head>
    <!-- body -->
    <body class="main-layout">
       <!-- loader  -->
       <div class="loader_bg">
-         <div class="loader"><img src="frontend/images/loading.gif" alt="#" /></div>
+         <div class="loader"><img src="frontend/images/logo.jpg" alt="#" /></div>
       </div>
       <!-- end loader --> 
       <!-- header -->
@@ -74,11 +90,38 @@
                <div class="col-xl-7 col-lg-7 col-md-9 col-sm-9">
                   <div class="menu-area">
                      <div class="limit-box">
-                        <nav class="main-menu">
+                        <nav class="main-menu navbar navbar-expand-lg">
                            <ul class="menu-area-main">
                               <li class="active"> <a href="index.html">Home</a> </li>
                               <li> <a href="about.html">About</a> </li>
-                              <li> <a href="product.html">product</a> </li>
+                              <li class="nav-item dropdown megamenu-li">
+                               <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Menu 1</a>
+                               <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
+                                <div class="row">
+                                 <div class="col-sm-6 col-lg-3">
+                                  <h5>Links</h5>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                 </div>
+                                 <div class="col-sm-6 col-lg-3">
+                                  <h5>More Links</h5>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                 </div>
+                                 <div class="col-sm-6 col-lg-3">
+                                  <h5>Paragraph</h5>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus in veritatis, facilis eligendi sunt, culpa autem harum porro earum.</p>
+                                 </div>
+                                 <div class="col-sm-6 col-lg-3">
+                                  <h5>Image</h5>
+                                  <img src="frontend/images/logo.jpg" alt="..." style="width: 100%;">
+                                 </div>
+                                </div>
+                               </div>
+                              </li>
                               <li> <a href="blog.html"> Blog</a> </li>
                               <li> <a href="contact.html">Contact</a> </li>
                               <li class="mean-last"> <a href="#contact">signup</a> </li>
@@ -187,6 +230,13 @@
          $(this).removeClass('transition');
          });
          });
+
+         $(document).ready(function() {
+          $(".megamenu").click( function(e) {
+            e.stopPropagation();
+          });
+        });
+
          
       </script> 
    </body>
