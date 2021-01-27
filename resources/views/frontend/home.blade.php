@@ -22,17 +22,14 @@
     <div class="container">
        <div class="white_bg">
        <div class="row">
-        @foreach ($whyus as $element)
           <dir class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
              <div class="for_box">
-                <i><img src="image/services/{{ $element->image}}"/></i>
-                <h3>{{ $element->title}}</h3>
-                <p>{{ $element->description}}</p>
+                <i><img src="frontend/icon/1.png"/></i>
+                <h3>Data recovery</h3>
+                <p>Perspiciatis eos quos totam cum minima autPerspiciatis eos quos</p>
              </div>
           </dir>
-        @endforeach
-          
-          {{-- <dir class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+          <dir class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
              <div class="for_box">
                 <i><img src="frontend/icon/2.png"/></i>
                 <h3>Computer repair</h3>
@@ -52,7 +49,7 @@
                 <h3>Network solutions</h3>
                 <p>Perspiciatis eos quos totam cum minima autPerspiciatis eos quos</p>
              </div>
-          </dir> --}}
+          </dir>
           <div class="col-md-12">
              <a class="read-more">Read More</a>
           </div>
