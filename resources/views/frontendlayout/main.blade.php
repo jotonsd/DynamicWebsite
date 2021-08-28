@@ -94,34 +94,33 @@
                            <ul class="menu-area-main">
                               <li class="active"> <a href="index.html">Home</a> </li>
                               <li> <a href="about.html">About</a> </li>
-                              <li class="nav-item dropdown megamenu-li">
-                               <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-                               <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
-                                <div class="row">
-                                 <div class="col-sm-12 col-lg-3">
-                                  <h5>Links</h5>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                  <a class="dropdown-item" href="#">Something else here</a>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                  <a class="dropdown-item" href="#">Something else here</a>
-                                 </div>
-                                 <div class="col-sm-12 col-lg-3">
-                                  <h5>More Links</h5>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                  <a class="dropdown-item" href="#">Something else here</a>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                 </div>
-                                 <div class="col-sm-12 col-lg-3">
-                                  <h5>Paragraph</h5>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus in veritatis, facilis eligendi sunt, culpa autem harum porro earum.</p>
-                                 </div>
-                                 <div class="col-sm-12 col-lg-3">
-                                  <h5>Image</h5>
-                                  <img src="frontend/images/logo.jpg" alt="..." style="width: 100%;">
-                                 </div>
+                              <li class="nav-item dropdown position-static"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#">Software</a>
+                    <div class="dropdown-menu w-100 top-auto">
+                        <div class="container">
+                            <div class="row w-100">
+                                <div class="text-center col-sm-4">
+                                    <h3 class="border border-top-0 border-right-0 border-left-0">Individuals</h3>
+                                    <a href="https://www.pramukhime.com/windows-application" class="dropdown-item">Windows Application</a>
+                                    <a title="Windows Application" href="https://www.pramukhime.com/windows-application" class="dropdown-item">Windows Application</a>
+                                    <a title="Android App" href="https://www.pramukhime.com/android-app" class="dropdown-item">Android App</a>
+                                    <a title="FireFox Extension" href="https://www.pramukhime.com/firefox-extension" class="dropdown-item">FireFox Extension</a>
                                 </div>
-                               </div>
-                              </li>
+                                <div class="text-center col-sm-4">
+                                    <h3 class="border border-top-0 border-right-0 border-left-0">Owners</h3>
+                                    <a title="WordPress Plugin" href="https://www.pramukhime.com/wordpress-plugin" class="dropdown-item">WordPress Plugin</a>
+                                    <a title="Drupal Module" href="https://www.pramukhime.com/drupal-module" class="dropdown-item">Drupal Module</a>
+                                    <a title="Joomla Extension" href="https://www.pramukhime.com/joomla-extension" class="dropdown-item">Joomla Extension</a>
+                                </div>
+                                <div class="text-center col-sm-4">
+                                    <h3 class="border border-top-0 border-right-0 border-left-0">Developers</h3>
+                                    <a title="JavaScript Library" href="https://www.pramukhime.com/javascript-library" class="dropdown-item">JavaScript Library</a>
+                                    <a title="TinyMCE Plugin" href="https://www.pramukhime.com/tinymce-plugin" class="dropdown-item">TinyMCE Plugin</a>
+                                    <a title="CKEditor Plugin" href="https://www.pramukhime.com/ckeditor-plugin" class="dropdown-item">CKEditor Plugin</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                               <li> <a href="blog.html"> Blog</a> </li>
                               <li> <a href="contact.html">Contact</a> </li>
                               <li class="mean-last"> <a href="#contact">signup</a> </li>
